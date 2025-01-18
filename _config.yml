@@ -1,0 +1,8 @@
+email: candicewilliams2511@gmial.com
+
+sass:
+    sass_dir: _sass
+
+collections:
+  courses:
+    output: true
