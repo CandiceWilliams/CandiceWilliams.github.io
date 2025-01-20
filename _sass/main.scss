@@ -1,4 +1,2 @@
-
-.current {
-    color: green;
-  }
+@use "0-base/0-base_nav" as *;
+@use "0-base/0-base_body" as *;
