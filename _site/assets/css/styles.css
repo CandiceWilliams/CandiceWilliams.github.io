@@ -1,59 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-nav {
+/* nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
-nav a {
-  display: block;
+*/
+.navbar a {
+  font-size: 1.7rem;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  margin-left: 4rem;
 }
 
-nav a:hover {
-  background-color: #111;
+.navbar a:hover,
+.navbar a.current {
+  color: #9593D9;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-nav ul li {
-  float: left;
-}
-nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  background-color: #111;
-}
-
-.current {
-  color: #4E148C;
-}
-
+/* nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    li {
+      float: left;
+      a{
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: #111;
+      }
+    }
+  } */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 600;
+  cursor: default;
 }
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   border: none;
@@ -62,7 +65,12 @@ nav ul li a:hover {
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  padding-top: 65px;
   background-color: #2C0735;
   text-align: center;
   color: #F4ECD6;
