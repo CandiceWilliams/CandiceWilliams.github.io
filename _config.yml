@@ -1,4 +1,4 @@
-email: candicewilliams2511@gmial.com
+email: candicewilliams2511@gmail.com
 
 sass:
     sass_dir: _sass
@@ -11,3 +11,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+baseurl: /
+url: https://candicewilliams.github.io
