@@ -1,11 +1,15 @@
 
-$--bg-color: #2C0735;
-$second_bg_color: #333;
-$text_color: #F4ECD6;
+$--bg-color: #4B3F2F;
+$second-bg-color: #333;
+$--emp-color-1: #E28548;
+$--emp-color-2: #F2BC50;
+$text_color: #F5F5DC;
+$--emp-color-3: #77852C;
 
 
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
@@ -14,15 +18,42 @@ $text_color: #F4ECD6;
     font-family: 'Poppins', sans-serif;
 }
 
+
 html{
     font-size: 62.5%;
     //overflow-x: hidden;
 }
 
 body{
-    padding-top: 65px;
+    //padding-top: 65px;
     background-color: $--bg-color;
-    text-align: center;
     color: $text_color;
 }
 
+section{
+    min-height: 100vh;
+    padding:10rem 9%;
+}
+
+.home-img img{
+    max-width: 35%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h1{
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 1.3;
+}

@@ -1,22 +1,40 @@
+$--bg-color: #4B3F2F;
+$second-bg-color: #333;
+$--emp-color-1: #E28548;
+$--hover-color: #f0a26e;
+$--emp-color-2: #F2BC50;
+$text_color: #F5F5DC;
+$--emp-color-3: #77852C;
 
-/* nav {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.navbar-custom .navbar-brand{
+  color: $text_color;
+  font-size: 2.3rem;
 }
 
-*/
-
-.navbar a{
-  font-size: 1.7rem;
-  color: white;
-  margin-left: 4rem;
+.navbar-custom .navbar-nav .nav-link{
+  font-size: 2.0rem;
+  color: $text_color;
 }
 
-.navbar a:hover, 
+.navbar-custom .nav-item .nav-link:hover {
+  color: $--hover-color; 
+}
+
+.navbar-custom .nav-item .nav-link.active,
+.navbar-custom .nav-link[aria-current="page"] {
+  color: $--emp-color-1; /* Change to your desired active color */
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(226,133,72, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+
+.custom-toggler .navbar-toggler {
+  border-color: $--emp-color-1;
+}
+/* .navbar a:hover, 
 .navbar a.current {
     color: #9593D9;
-}
+} */
 
 /* nav ul {
     list-style-type: none;
@@ -38,7 +56,7 @@
     }
   } */
 
-.header{
+/* .header{
   position: fixed;
   top: 0;
   left: 0;
@@ -49,11 +67,11 @@
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-}
+} */
 
-.logo{
+ .navbar-brand{
   font-size: 2.5rem;
   color: white;
   font-weight: 600;
   cursor: default;
-}
+} 
